@@ -22,9 +22,9 @@ Partial Class FormAddRecipe
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txt_recipe = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_buyer = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -55,14 +55,16 @@ Partial Class FormAddRecipe
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.txt_kodekaininput = New Guna.UI2.WinForms.Guna2TextBox()
         Me.panelbuyer = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.dgbuyer = New System.Windows.Forms.DataGridView()
         Me.txt_buyerinput = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_kodebuyerinput = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
         Me.panelinsert = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txt_jenisobatinsert = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txt_valueinsert = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button11 = New Guna.UI2.WinForms.Guna2Button()
@@ -71,8 +73,6 @@ Partial Class FormAddRecipe
         Me.txt_namaobatinsert = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button12 = New Guna.UI2.WinForms.Guna2Button()
         Me.txt_kodeobatinsert = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.txt_jenisobatinsert = New Guna.UI2.WinForms.Guna2TextBox()
         CType(Me.dginsert, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelkodekain.SuspendLayout()
         CType(Me.dgkodekain, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,7 +94,7 @@ Partial Class FormAddRecipe
         Me.txt_recipe.FocusedState.Parent = Me.txt_recipe
         Me.txt_recipe.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_recipe.HoverState.Parent = Me.txt_recipe
-        Me.txt_recipe.Location = New System.Drawing.Point(140, 22)
+        Me.txt_recipe.Location = New System.Drawing.Point(85, 22)
         Me.txt_recipe.Name = "txt_recipe"
         Me.txt_recipe.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_recipe.PlaceholderText = ""
@@ -116,7 +116,7 @@ Partial Class FormAddRecipe
         Me.txt_buyer.FocusedState.Parent = Me.txt_buyer
         Me.txt_buyer.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_buyer.HoverState.Parent = Me.txt_buyer
-        Me.txt_buyer.Location = New System.Drawing.Point(496, 64)
+        Me.txt_buyer.Location = New System.Drawing.Point(423, 64)
         Me.txt_buyer.Name = "txt_buyer"
         Me.txt_buyer.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_buyer.PlaceholderText = ""
@@ -149,7 +149,7 @@ Partial Class FormAddRecipe
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(375, 75)
+        Me.Label3.Location = New System.Drawing.Point(302, 75)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(50, 20)
         Me.Label3.TabIndex = 8
@@ -162,7 +162,7 @@ Partial Class FormAddRecipe
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(565, 501)
+        Me.Guna2Button1.Location = New System.Drawing.Point(442, 428)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
         Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
@@ -171,38 +171,38 @@ Partial Class FormAddRecipe
         '
         'dginsert
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.dginsert.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.dginsert.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dginsert.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dginsert.BackgroundColor = System.Drawing.Color.White
         Me.dginsert.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dginsert.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dginsert.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dginsert.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dginsert.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dginsert.ColumnHeadersHeight = 40
         Me.dginsert.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Kodeobat, Me.NamaObat, Me.Value, Me.Jenis})
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dginsert.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dginsert.DefaultCellStyle = DataGridViewCellStyle3
         Me.dginsert.EnableHeadersVisualStyles = False
         Me.dginsert.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dginsert.Location = New System.Drawing.Point(16, 215)
+        Me.dginsert.Location = New System.Drawing.Point(16, 153)
         Me.dginsert.Name = "dginsert"
         Me.dginsert.RowHeadersVisible = False
         Me.dginsert.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dginsert.Size = New System.Drawing.Size(729, 269)
+        Me.dginsert.Size = New System.Drawing.Size(606, 269)
         Me.dginsert.TabIndex = 19
         Me.dginsert.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.dginsert.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -261,7 +261,7 @@ Partial Class FormAddRecipe
         Me.cmb_process.ItemHeight = 30
         Me.cmb_process.Items.AddRange(New Object() {"CPB", "PAD"})
         Me.cmb_process.ItemsAppearance.Parent = Me.cmb_process
-        Me.cmb_process.Location = New System.Drawing.Point(140, 64)
+        Me.cmb_process.Location = New System.Drawing.Point(85, 64)
         Me.cmb_process.Name = "cmb_process"
         Me.cmb_process.ShadowDecoration.Parent = Me.cmb_process
         Me.cmb_process.Size = New System.Drawing.Size(200, 36)
@@ -274,7 +274,7 @@ Partial Class FormAddRecipe
         Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(603, 64)
+        Me.Guna2Button2.Location = New System.Drawing.Point(530, 64)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
         Me.Guna2Button2.Size = New System.Drawing.Size(43, 36)
@@ -288,7 +288,7 @@ Partial Class FormAddRecipe
         Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
         Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(652, 64)
+        Me.Guna2Button3.Location = New System.Drawing.Point(579, 64)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
         Me.Guna2Button3.Size = New System.Drawing.Size(43, 36)
@@ -302,7 +302,7 @@ Partial Class FormAddRecipe
         Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button4.ForeColor = System.Drawing.Color.White
         Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Location = New System.Drawing.Point(652, 22)
+        Me.Guna2Button4.Location = New System.Drawing.Point(579, 22)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
         Me.Guna2Button4.Size = New System.Drawing.Size(43, 36)
@@ -316,7 +316,7 @@ Partial Class FormAddRecipe
         Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button5.ForeColor = System.Drawing.Color.White
         Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(603, 22)
+        Me.Guna2Button5.Location = New System.Drawing.Point(530, 22)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
         Me.Guna2Button5.Size = New System.Drawing.Size(43, 36)
@@ -327,7 +327,7 @@ Partial Class FormAddRecipe
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(375, 33)
+        Me.Label7.Location = New System.Drawing.Point(302, 33)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(81, 20)
         Me.Label7.TabIndex = 24
@@ -346,7 +346,7 @@ Partial Class FormAddRecipe
         Me.txt_kodekain.FocusedState.Parent = Me.txt_kodekain
         Me.txt_kodekain.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_kodekain.HoverState.Parent = Me.txt_kodekain
-        Me.txt_kodekain.Location = New System.Drawing.Point(496, 22)
+        Me.txt_kodekain.Location = New System.Drawing.Point(423, 22)
         Me.txt_kodekain.Name = "txt_kodekain"
         Me.txt_kodekain.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_kodekain.PlaceholderText = ""
@@ -362,7 +362,7 @@ Partial Class FormAddRecipe
         Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button6.ForeColor = System.Drawing.Color.White
         Me.Guna2Button6.HoverState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Location = New System.Drawing.Point(16, 173)
+        Me.Guna2Button6.Location = New System.Drawing.Point(16, 111)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.ShadowDecoration.Parent = Me.Guna2Button6
         Me.Guna2Button6.Size = New System.Drawing.Size(215, 36)
@@ -534,6 +534,20 @@ Partial Class FormAddRecipe
         Me.panelbuyer.TabIndex = 38
         Me.panelbuyer.Visible = False
         '
+        'Guna2Button10
+        '
+        Me.Guna2Button10.CheckedState.Parent = Me.Guna2Button10
+        Me.Guna2Button10.CustomImages.Parent = Me.Guna2Button10
+        Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button10.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button10.HoverState.Parent = Me.Guna2Button10
+        Me.Guna2Button10.Location = New System.Drawing.Point(286, 38)
+        Me.Guna2Button10.Name = "Guna2Button10"
+        Me.Guna2Button10.ShadowDecoration.Parent = Me.Guna2Button10
+        Me.Guna2Button10.Size = New System.Drawing.Size(58, 36)
+        Me.Guna2Button10.TabIndex = 36
+        Me.Guna2Button10.Text = "ADD"
+        '
         'Guna2Button9
         '
         Me.Guna2Button9.CheckedState.Parent = Me.Guna2Button9
@@ -618,20 +632,6 @@ Partial Class FormAddRecipe
         Me.txt_kodebuyerinput.Size = New System.Drawing.Size(83, 36)
         Me.txt_kodebuyerinput.TabIndex = 29
         '
-        'Guna2Button10
-        '
-        Me.Guna2Button10.CheckedState.Parent = Me.Guna2Button10
-        Me.Guna2Button10.CustomImages.Parent = Me.Guna2Button10
-        Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button10.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button10.HoverState.Parent = Me.Guna2Button10
-        Me.Guna2Button10.Location = New System.Drawing.Point(286, 38)
-        Me.Guna2Button10.Name = "Guna2Button10"
-        Me.Guna2Button10.ShadowDecoration.Parent = Me.Guna2Button10
-        Me.Guna2Button10.Size = New System.Drawing.Size(58, 36)
-        Me.Guna2Button10.TabIndex = 36
-        Me.Guna2Button10.Text = "ADD"
-        '
         'panelinsert
         '
         Me.panelinsert.BackColor = System.Drawing.Color.LightGray
@@ -651,6 +651,37 @@ Partial Class FormAddRecipe
         Me.panelinsert.Size = New System.Drawing.Size(362, 212)
         Me.panelinsert.TabIndex = 38
         Me.panelinsert.Visible = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(169, 80)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(57, 13)
+        Me.Label13.TabIndex = 39
+        Me.Label13.Text = "Jenis Obat"
+        '
+        'txt_jenisobatinsert
+        '
+        Me.txt_jenisobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_jenisobatinsert.DefaultText = ""
+        Me.txt_jenisobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_jenisobatinsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_jenisobatinsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_jenisobatinsert.DisabledState.Parent = Me.txt_jenisobatinsert
+        Me.txt_jenisobatinsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_jenisobatinsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_jenisobatinsert.FocusedState.Parent = Me.txt_jenisobatinsert
+        Me.txt_jenisobatinsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_jenisobatinsert.HoverState.Parent = Me.txt_jenisobatinsert
+        Me.txt_jenisobatinsert.Location = New System.Drawing.Point(172, 100)
+        Me.txt_jenisobatinsert.Name = "txt_jenisobatinsert"
+        Me.txt_jenisobatinsert.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_jenisobatinsert.PlaceholderText = ""
+        Me.txt_jenisobatinsert.SelectedText = ""
+        Me.txt_jenisobatinsert.ShadowDecoration.Parent = Me.txt_jenisobatinsert
+        Me.txt_jenisobatinsert.Size = New System.Drawing.Size(172, 36)
+        Me.txt_jenisobatinsert.TabIndex = 32
         '
         'Label8
         '
@@ -773,42 +804,11 @@ Partial Class FormAddRecipe
         Me.txt_kodeobatinsert.Size = New System.Drawing.Size(149, 36)
         Me.txt_kodeobatinsert.TabIndex = 29
         '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(169, 80)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(57, 13)
-        Me.Label13.TabIndex = 39
-        Me.Label13.Text = "Jenis Obat"
-        '
-        'txt_jenisobatinsert
-        '
-        Me.txt_jenisobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_jenisobatinsert.DefaultText = ""
-        Me.txt_jenisobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_jenisobatinsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_jenisobatinsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_jenisobatinsert.DisabledState.Parent = Me.txt_jenisobatinsert
-        Me.txt_jenisobatinsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_jenisobatinsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_jenisobatinsert.FocusedState.Parent = Me.txt_jenisobatinsert
-        Me.txt_jenisobatinsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_jenisobatinsert.HoverState.Parent = Me.txt_jenisobatinsert
-        Me.txt_jenisobatinsert.Location = New System.Drawing.Point(172, 100)
-        Me.txt_jenisobatinsert.Name = "txt_jenisobatinsert"
-        Me.txt_jenisobatinsert.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_jenisobatinsert.PlaceholderText = ""
-        Me.txt_jenisobatinsert.SelectedText = ""
-        Me.txt_jenisobatinsert.ShadowDecoration.Parent = Me.txt_jenisobatinsert
-        Me.txt_jenisobatinsert.Size = New System.Drawing.Size(172, 36)
-        Me.txt_jenisobatinsert.TabIndex = 32
-        '
         'FormAddRecipe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(771, 591)
+        Me.ClientSize = New System.Drawing.Size(638, 486)
         Me.Controls.Add(Me.Guna2Button6)
         Me.Controls.Add(Me.Guna2Button4)
         Me.Controls.Add(Me.Guna2Button5)
