@@ -24,8 +24,8 @@ Partial Class FormRecipeSelector
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_recipeID = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgrecipe = New System.Windows.Forms.DataGridView()
+        CType(Me.dgrecipe, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -60,25 +60,25 @@ Partial Class FormRecipeSelector
         Me.txt_recipeID.Size = New System.Drawing.Size(381, 29)
         Me.txt_recipeID.TabIndex = 9
         '
-        'DataGridView1
+        'dgrecipe
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(31, 71)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(468, 495)
-        Me.DataGridView1.TabIndex = 11
+        Me.dgrecipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgrecipe.Location = New System.Drawing.Point(31, 71)
+        Me.dgrecipe.Name = "dgrecipe"
+        Me.dgrecipe.Size = New System.Drawing.Size(468, 495)
+        Me.dgrecipe.TabIndex = 11
         '
         'FormRecipeSelector
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(524, 590)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgrecipe)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_recipeID)
         Me.Name = "FormRecipeSelector"
         Me.Text = "FormRecipeSelector"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgrecipe, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -86,5 +86,5 @@ Partial Class FormRecipeSelector
 
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_recipeID As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgrecipe As DataGridView
 End Class

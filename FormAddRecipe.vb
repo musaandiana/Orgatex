@@ -1,4 +1,5 @@
-﻿Imports System.Data.OleDb
+﻿Imports System.ComponentModel
+Imports System.Data.OleDb
 Imports SingleStoreConnector
 
 Public Class FormAddRecipe
@@ -51,5 +52,9 @@ Public Class FormAddRecipe
             .Text = String.Empty
             .Show()
         End With
+    End Sub
+
+    Private Sub FormAddRecipe_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        FormMenuAwal.Show()
     End Sub
 End Class
