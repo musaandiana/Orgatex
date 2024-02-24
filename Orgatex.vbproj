@@ -119,6 +119,12 @@
     <Compile Include="FormAddRecipe.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormBatchScheduler.Designer.vb">
+      <DependentUpon>FormBatchScheduler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBatchScheduler.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormTableBuyer.Designer.vb">
       <DependentUpon>FormTableBuyer.vb</DependentUpon>
     </Compile>
