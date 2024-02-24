@@ -119,6 +119,30 @@
     <Compile Include="FormAddRecipe.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormBatchList.Designer.vb">
+      <DependentUpon>FormBatchList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBatchList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBatchScheduler.Designer.vb">
+      <DependentUpon>FormBatchScheduler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBatchScheduler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuAwal.Designer.vb">
+      <DependentUpon>FormMenuAwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuAwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecipeSelector.Designer.vb">
+      <DependentUpon>FormRecipeSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipeSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormTableBuyer.Designer.vb">
       <DependentUpon>FormTableBuyer.vb</DependentUpon>
     </Compile>
@@ -163,6 +187,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddRecipe.resx">
       <DependentUpon>FormAddRecipe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBatchList.resx">
+      <DependentUpon>FormBatchList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBatchScheduler.resx">
+      <DependentUpon>FormBatchScheduler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuAwal.resx">
+      <DependentUpon>FormMenuAwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipeSelector.resx">
+      <DependentUpon>FormRecipeSelector.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTableBuyer.resx">
       <DependentUpon>FormTableBuyer.vb</DependentUpon>
