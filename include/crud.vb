@@ -2,7 +2,7 @@
 
 Module crud
     Public Sub cudfunction(ByVal query As String)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand(query, con)
@@ -20,7 +20,7 @@ Module crud
     End Sub
 
     Public Sub retrieveSingleResult(ByVal query As String)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand(query, con)
@@ -35,7 +35,7 @@ Module crud
     End Sub
 
     Public Sub retrieve(ByVal query As String, ByVal dtg As DataGridView)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand(query, con)
@@ -52,7 +52,7 @@ Module crud
     End Sub
 
     Public Sub cudfunctionNOmsg(ByVal query As String)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand(query, con)

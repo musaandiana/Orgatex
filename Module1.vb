@@ -8,7 +8,7 @@ Module Module1
     Public dr As OleDbDataReader
 
     Sub koneksi()
-        str = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;"
+        str = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;"
         conn = New OleDbConnection(str)
         Try
             conn.Open()
