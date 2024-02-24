@@ -119,6 +119,17 @@
     <Compile Include="FormAddRecipe.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormTableBuyer.Designer.vb">
+      <DependentUpon>FormTableBuyer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTableBuyer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="include\config.vb" />
+    <Compile Include="include\crud.vb" />
+    <Compile Include="include\publicfunction.vb" />
+    <Compile Include="include\publicvariable.vb" />
+    <Compile Include="include\Settings.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -146,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddRecipe.resx">
       <DependentUpon>FormAddRecipe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTableBuyer.resx">
+      <DependentUpon>FormTableBuyer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

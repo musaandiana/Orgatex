@@ -28,4 +28,16 @@ Public Class FormAddRecipe
             conn.Close()
         End Try
     End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        With FormTableBuyer
+            .StartPosition = FormStartPosition.Manual
+            .TopMost = False
+            .Owner = Me
+            .FormBorderStyle = FormBorderStyle.FixedSingle
+            .Location = MousePosition
+            .Text = String.Empty
+            .Show()
+        End With
+    End Sub
 End Class
