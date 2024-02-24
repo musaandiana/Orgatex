@@ -27,33 +27,33 @@ Partial Class FormBatchScheduler
         Me.txt_recipe = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.txt_batchid = New System.Windows.Forms.Label()
-        Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.txt_name = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.txt_customer = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txt_kk = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txt_batch2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txt_batch1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txt_ockh = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txt_y = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txt_y11 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txt_y12 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txt_comment = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.txt_kg12 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txt_kg11 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txt_kg = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.txt_comment = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.txt_y12 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txt_y11 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txt_y = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txt_ockh = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txt_batch2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txt_batch1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txt_kk = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_customer = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txt_name = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.txt_batchid = New System.Windows.Forms.Label()
+        Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
@@ -89,7 +89,7 @@ Partial Class FormBatchScheduler
         Me.txt_recipeID.SelectedText = ""
         Me.txt_recipeID.ShadowDecoration.Parent = Me.txt_recipeID
         Me.txt_recipeID.Size = New System.Drawing.Size(55, 29)
-        Me.txt_recipeID.TabIndex = 7
+        Me.txt_recipeID.TabIndex = 1
         '
         'txt_recipe
         '
@@ -111,7 +111,7 @@ Partial Class FormBatchScheduler
         Me.txt_recipe.SelectedText = ""
         Me.txt_recipe.ShadowDecoration.Parent = Me.txt_recipe
         Me.txt_recipe.Size = New System.Drawing.Size(163, 29)
-        Me.txt_recipe.TabIndex = 9
+        Me.txt_recipe.TabIndex = 2
         '
         'Guna2Button3
         '
@@ -124,7 +124,7 @@ Partial Class FormBatchScheduler
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
         Me.Guna2Button3.Size = New System.Drawing.Size(43, 29)
-        Me.Guna2Button3.TabIndex = 23
+        Me.Guna2Button3.TabIndex = 18
         Me.Guna2Button3.Text = "+"
         '
         'Guna2Panel1
@@ -161,300 +161,38 @@ Partial Class FormBatchScheduler
         Me.Guna2Panel1.Size = New System.Drawing.Size(382, 613)
         Me.Guna2Panel1.TabIndex = 24
         '
-        'txt_batchid
+        'txt_comment
         '
-        Me.txt_batchid.AutoSize = True
-        Me.txt_batchid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_batchid.Location = New System.Drawing.Point(13, 13)
-        Me.txt_batchid.Name = "txt_batchid"
-        Me.txt_batchid.Size = New System.Drawing.Size(51, 20)
-        Me.txt_batchid.TabIndex = 9
-        Me.txt_batchid.Text = "Name"
+        Me.txt_comment.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_comment.DefaultText = ""
+        Me.txt_comment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_comment.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_comment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_comment.DisabledState.Parent = Me.txt_comment
+        Me.txt_comment.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_comment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_comment.FocusedState.Parent = Me.txt_comment
+        Me.txt_comment.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_comment.HoverState.Parent = Me.txt_comment
+        Me.txt_comment.Location = New System.Drawing.Point(17, 467)
+        Me.txt_comment.Multiline = True
+        Me.txt_comment.Name = "txt_comment"
+        Me.txt_comment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_comment.PlaceholderText = ""
+        Me.txt_comment.SelectedText = ""
+        Me.txt_comment.ShadowDecoration.Parent = Me.txt_comment
+        Me.txt_comment.Size = New System.Drawing.Size(343, 132)
+        Me.txt_comment.TabIndex = 15
         '
-        'Guna2Separator1
+        'Label13
         '
-        Me.Guna2Separator1.Location = New System.Drawing.Point(28, 60)
-        Me.Guna2Separator1.Name = "Guna2Separator1"
-        Me.Guna2Separator1.Size = New System.Drawing.Size(382, 20)
-        Me.Guna2Separator1.TabIndex = 25
-        '
-        'txt_name
-        '
-        Me.txt_name.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_name.DefaultText = ""
-        Me.txt_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_name.DisabledState.Parent = Me.txt_name
-        Me.txt_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_name.FocusedState.Parent = Me.txt_name
-        Me.txt_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_name.HoverState.Parent = Me.txt_name
-        Me.txt_name.Location = New System.Drawing.Point(95, 8)
-        Me.txt_name.Name = "txt_name"
-        Me.txt_name.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_name.PlaceholderText = ""
-        Me.txt_name.SelectedText = ""
-        Me.txt_name.ShadowDecoration.Parent = Me.txt_name
-        Me.txt_name.Size = New System.Drawing.Size(265, 29)
-        Me.txt_name.TabIndex = 10
-        '
-        'txt_customer
-        '
-        Me.txt_customer.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_customer.DefaultText = ""
-        Me.txt_customer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_customer.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_customer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_customer.DisabledState.Parent = Me.txt_customer
-        Me.txt_customer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_customer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_customer.FocusedState.Parent = Me.txt_customer
-        Me.txt_customer.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_customer.HoverState.Parent = Me.txt_customer
-        Me.txt_customer.Location = New System.Drawing.Point(95, 113)
-        Me.txt_customer.Name = "txt_customer"
-        Me.txt_customer.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_customer.PlaceholderText = ""
-        Me.txt_customer.SelectedText = ""
-        Me.txt_customer.ShadowDecoration.Parent = Me.txt_customer
-        Me.txt_customer.Size = New System.Drawing.Size(265, 29)
-        Me.txt_customer.TabIndex = 12
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 118)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(78, 20)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Customer"
-        '
-        'txt_kk
-        '
-        Me.txt_kk.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_kk.DefaultText = ""
-        Me.txt_kk.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_kk.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_kk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_kk.DisabledState.Parent = Me.txt_kk
-        Me.txt_kk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_kk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_kk.FocusedState.Parent = Me.txt_kk
-        Me.txt_kk.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_kk.HoverState.Parent = Me.txt_kk
-        Me.txt_kk.Location = New System.Drawing.Point(95, 148)
-        Me.txt_kk.Name = "txt_kk"
-        Me.txt_kk.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_kk.PlaceholderText = ""
-        Me.txt_kk.SelectedText = ""
-        Me.txt_kk.ShadowDecoration.Parent = Me.txt_kk
-        Me.txt_kk.Size = New System.Drawing.Size(265, 29)
-        Me.txt_kk.TabIndex = 14
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 153)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 20)
-        Me.Label3.TabIndex = 13
-        Me.Label3.Text = "Kode Kain"
-        '
-        'txt_batch2
-        '
-        Me.txt_batch2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_batch2.DefaultText = ""
-        Me.txt_batch2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_batch2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_batch2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_batch2.DisabledState.Parent = Me.txt_batch2
-        Me.txt_batch2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_batch2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_batch2.FocusedState.Parent = Me.txt_batch2
-        Me.txt_batch2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_batch2.HoverState.Parent = Me.txt_batch2
-        Me.txt_batch2.Location = New System.Drawing.Point(95, 78)
-        Me.txt_batch2.Name = "txt_batch2"
-        Me.txt_batch2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_batch2.PlaceholderText = ""
-        Me.txt_batch2.SelectedText = ""
-        Me.txt_batch2.ShadowDecoration.Parent = Me.txt_batch2
-        Me.txt_batch2.Size = New System.Drawing.Size(265, 29)
-        Me.txt_batch2.TabIndex = 18
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(13, 83)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 20)
-        Me.Label4.TabIndex = 17
-        Me.Label4.Text = "Batch 2"
-        '
-        'txt_batch1
-        '
-        Me.txt_batch1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_batch1.DefaultText = ""
-        Me.txt_batch1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_batch1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_batch1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_batch1.DisabledState.Parent = Me.txt_batch1
-        Me.txt_batch1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_batch1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_batch1.FocusedState.Parent = Me.txt_batch1
-        Me.txt_batch1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_batch1.HoverState.Parent = Me.txt_batch1
-        Me.txt_batch1.Location = New System.Drawing.Point(95, 43)
-        Me.txt_batch1.Name = "txt_batch1"
-        Me.txt_batch1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_batch1.PlaceholderText = ""
-        Me.txt_batch1.SelectedText = ""
-        Me.txt_batch1.ShadowDecoration.Parent = Me.txt_batch1
-        Me.txt_batch1.Size = New System.Drawing.Size(265, 29)
-        Me.txt_batch1.TabIndex = 16
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(13, 48)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 20)
-        Me.Label5.TabIndex = 15
-        Me.Label5.Text = "Batch 1"
-        '
-        'txt_ockh
-        '
-        Me.txt_ockh.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_ockh.DefaultText = ""
-        Me.txt_ockh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_ockh.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_ockh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_ockh.DisabledState.Parent = Me.txt_ockh
-        Me.txt_ockh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_ockh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_ockh.FocusedState.Parent = Me.txt_ockh
-        Me.txt_ockh.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_ockh.HoverState.Parent = Me.txt_ockh
-        Me.txt_ockh.Location = New System.Drawing.Point(95, 183)
-        Me.txt_ockh.Name = "txt_ockh"
-        Me.txt_ockh.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_ockh.PlaceholderText = ""
-        Me.txt_ockh.SelectedText = ""
-        Me.txt_ockh.ShadowDecoration.Parent = Me.txt_ockh
-        Me.txt_ockh.Size = New System.Drawing.Size(265, 29)
-        Me.txt_ockh.TabIndex = 20
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(13, 188)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(54, 20)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "OCKH"
-        '
-        'txt_y
-        '
-        Me.txt_y.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_y.DefaultText = ""
-        Me.txt_y.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_y.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_y.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_y.DisabledState.Parent = Me.txt_y
-        Me.txt_y.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_y.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_y.FocusedState.Parent = Me.txt_y
-        Me.txt_y.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_y.HoverState.Parent = Me.txt_y
-        Me.txt_y.Location = New System.Drawing.Point(95, 218)
-        Me.txt_y.Name = "txt_y"
-        Me.txt_y.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_y.PlaceholderText = ""
-        Me.txt_y.SelectedText = ""
-        Me.txt_y.ShadowDecoration.Parent = Me.txt_y
-        Me.txt_y.Size = New System.Drawing.Size(265, 29)
-        Me.txt_y.TabIndex = 22
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(13, 223)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 20)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "Yard"
-        '
-        'txt_y11
-        '
-        Me.txt_y11.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_y11.DefaultText = ""
-        Me.txt_y11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_y11.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_y11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_y11.DisabledState.Parent = Me.txt_y11
-        Me.txt_y11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_y11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_y11.FocusedState.Parent = Me.txt_y11
-        Me.txt_y11.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_y11.HoverState.Parent = Me.txt_y11
-        Me.txt_y11.Location = New System.Drawing.Point(95, 253)
-        Me.txt_y11.Name = "txt_y11"
-        Me.txt_y11.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_y11.PlaceholderText = ""
-        Me.txt_y11.SelectedText = ""
-        Me.txt_y11.ShadowDecoration.Parent = Me.txt_y11
-        Me.txt_y11.Size = New System.Drawing.Size(265, 29)
-        Me.txt_y11.TabIndex = 24
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(13, 258)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(69, 20)
-        Me.Label8.TabIndex = 23
-        Me.Label8.Text = "Yard 1.1"
-        '
-        'txt_y12
-        '
-        Me.txt_y12.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_y12.DefaultText = ""
-        Me.txt_y12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_y12.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_y12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_y12.DisabledState.Parent = Me.txt_y12
-        Me.txt_y12.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_y12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_y12.FocusedState.Parent = Me.txt_y12
-        Me.txt_y12.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_y12.HoverState.Parent = Me.txt_y12
-        Me.txt_y12.Location = New System.Drawing.Point(95, 288)
-        Me.txt_y12.Name = "txt_y12"
-        Me.txt_y12.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_y12.PlaceholderText = ""
-        Me.txt_y12.SelectedText = ""
-        Me.txt_y12.ShadowDecoration.Parent = Me.txt_y12
-        Me.txt_y12.Size = New System.Drawing.Size(265, 29)
-        Me.txt_y12.TabIndex = 26
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(13, 293)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(69, 20)
-        Me.Label9.TabIndex = 25
-        Me.Label9.Text = "Yard 1.2"
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(13, 444)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(78, 20)
+        Me.Label13.TabIndex = 33
+        Me.Label13.Text = "Comment"
         '
         'txt_kg12
         '
@@ -476,7 +214,7 @@ Partial Class FormBatchScheduler
         Me.txt_kg12.SelectedText = ""
         Me.txt_kg12.ShadowDecoration.Parent = Me.txt_kg12
         Me.txt_kg12.Size = New System.Drawing.Size(265, 29)
-        Me.txt_kg12.TabIndex = 32
+        Me.txt_kg12.TabIndex = 14
         '
         'Label10
         '
@@ -508,7 +246,7 @@ Partial Class FormBatchScheduler
         Me.txt_kg11.SelectedText = ""
         Me.txt_kg11.ShadowDecoration.Parent = Me.txt_kg11
         Me.txt_kg11.Size = New System.Drawing.Size(265, 29)
-        Me.txt_kg11.TabIndex = 30
+        Me.txt_kg11.TabIndex = 13
         '
         'Label11
         '
@@ -540,7 +278,7 @@ Partial Class FormBatchScheduler
         Me.txt_kg.SelectedText = ""
         Me.txt_kg.ShadowDecoration.Parent = Me.txt_kg
         Me.txt_kg.Size = New System.Drawing.Size(265, 29)
-        Me.txt_kg.TabIndex = 28
+        Me.txt_kg.TabIndex = 12
         '
         'Label12
         '
@@ -552,38 +290,300 @@ Partial Class FormBatchScheduler
         Me.Label12.TabIndex = 27
         Me.Label12.Text = "Kg"
         '
-        'Label13
+        'txt_y12
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(13, 444)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(78, 20)
-        Me.Label13.TabIndex = 33
-        Me.Label13.Text = "Comment"
+        Me.txt_y12.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_y12.DefaultText = ""
+        Me.txt_y12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_y12.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_y12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_y12.DisabledState.Parent = Me.txt_y12
+        Me.txt_y12.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_y12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_y12.FocusedState.Parent = Me.txt_y12
+        Me.txt_y12.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_y12.HoverState.Parent = Me.txt_y12
+        Me.txt_y12.Location = New System.Drawing.Point(95, 288)
+        Me.txt_y12.Name = "txt_y12"
+        Me.txt_y12.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_y12.PlaceholderText = ""
+        Me.txt_y12.SelectedText = ""
+        Me.txt_y12.ShadowDecoration.Parent = Me.txt_y12
+        Me.txt_y12.Size = New System.Drawing.Size(265, 29)
+        Me.txt_y12.TabIndex = 11
         '
-        'txt_comment
+        'Label9
         '
-        Me.txt_comment.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_comment.DefaultText = ""
-        Me.txt_comment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_comment.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_comment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_comment.DisabledState.Parent = Me.txt_comment
-        Me.txt_comment.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_comment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_comment.FocusedState.Parent = Me.txt_comment
-        Me.txt_comment.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_comment.HoverState.Parent = Me.txt_comment
-        Me.txt_comment.Location = New System.Drawing.Point(17, 467)
-        Me.txt_comment.Multiline = True
-        Me.txt_comment.Name = "txt_comment"
-        Me.txt_comment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_comment.PlaceholderText = ""
-        Me.txt_comment.SelectedText = ""
-        Me.txt_comment.ShadowDecoration.Parent = Me.txt_comment
-        Me.txt_comment.Size = New System.Drawing.Size(343, 132)
-        Me.txt_comment.TabIndex = 26
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(13, 293)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(69, 20)
+        Me.Label9.TabIndex = 25
+        Me.Label9.Text = "Yard 1.2"
+        '
+        'txt_y11
+        '
+        Me.txt_y11.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_y11.DefaultText = ""
+        Me.txt_y11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_y11.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_y11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_y11.DisabledState.Parent = Me.txt_y11
+        Me.txt_y11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_y11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_y11.FocusedState.Parent = Me.txt_y11
+        Me.txt_y11.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_y11.HoverState.Parent = Me.txt_y11
+        Me.txt_y11.Location = New System.Drawing.Point(95, 253)
+        Me.txt_y11.Name = "txt_y11"
+        Me.txt_y11.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_y11.PlaceholderText = ""
+        Me.txt_y11.SelectedText = ""
+        Me.txt_y11.ShadowDecoration.Parent = Me.txt_y11
+        Me.txt_y11.Size = New System.Drawing.Size(265, 29)
+        Me.txt_y11.TabIndex = 10
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(13, 258)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(69, 20)
+        Me.Label8.TabIndex = 23
+        Me.Label8.Text = "Yard 1.1"
+        '
+        'txt_y
+        '
+        Me.txt_y.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_y.DefaultText = ""
+        Me.txt_y.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_y.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_y.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_y.DisabledState.Parent = Me.txt_y
+        Me.txt_y.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_y.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_y.FocusedState.Parent = Me.txt_y
+        Me.txt_y.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_y.HoverState.Parent = Me.txt_y
+        Me.txt_y.Location = New System.Drawing.Point(95, 218)
+        Me.txt_y.Name = "txt_y"
+        Me.txt_y.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_y.PlaceholderText = ""
+        Me.txt_y.SelectedText = ""
+        Me.txt_y.ShadowDecoration.Parent = Me.txt_y
+        Me.txt_y.Size = New System.Drawing.Size(265, 29)
+        Me.txt_y.TabIndex = 9
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(13, 223)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(43, 20)
+        Me.Label7.TabIndex = 21
+        Me.Label7.Text = "Yard"
+        '
+        'txt_ockh
+        '
+        Me.txt_ockh.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_ockh.DefaultText = ""
+        Me.txt_ockh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_ockh.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_ockh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_ockh.DisabledState.Parent = Me.txt_ockh
+        Me.txt_ockh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_ockh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_ockh.FocusedState.Parent = Me.txt_ockh
+        Me.txt_ockh.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_ockh.HoverState.Parent = Me.txt_ockh
+        Me.txt_ockh.Location = New System.Drawing.Point(95, 183)
+        Me.txt_ockh.Name = "txt_ockh"
+        Me.txt_ockh.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_ockh.PlaceholderText = ""
+        Me.txt_ockh.SelectedText = ""
+        Me.txt_ockh.ShadowDecoration.Parent = Me.txt_ockh
+        Me.txt_ockh.Size = New System.Drawing.Size(265, 29)
+        Me.txt_ockh.TabIndex = 8
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(13, 188)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(54, 20)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "OCKH"
+        '
+        'txt_batch2
+        '
+        Me.txt_batch2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_batch2.DefaultText = ""
+        Me.txt_batch2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_batch2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_batch2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_batch2.DisabledState.Parent = Me.txt_batch2
+        Me.txt_batch2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_batch2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_batch2.FocusedState.Parent = Me.txt_batch2
+        Me.txt_batch2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_batch2.HoverState.Parent = Me.txt_batch2
+        Me.txt_batch2.Location = New System.Drawing.Point(95, 78)
+        Me.txt_batch2.Name = "txt_batch2"
+        Me.txt_batch2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_batch2.PlaceholderText = ""
+        Me.txt_batch2.SelectedText = ""
+        Me.txt_batch2.ShadowDecoration.Parent = Me.txt_batch2
+        Me.txt_batch2.Size = New System.Drawing.Size(265, 29)
+        Me.txt_batch2.TabIndex = 5
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(13, 83)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(64, 20)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "Batch 2"
+        '
+        'txt_batch1
+        '
+        Me.txt_batch1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_batch1.DefaultText = ""
+        Me.txt_batch1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_batch1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_batch1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_batch1.DisabledState.Parent = Me.txt_batch1
+        Me.txt_batch1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_batch1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_batch1.FocusedState.Parent = Me.txt_batch1
+        Me.txt_batch1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_batch1.HoverState.Parent = Me.txt_batch1
+        Me.txt_batch1.Location = New System.Drawing.Point(95, 43)
+        Me.txt_batch1.Name = "txt_batch1"
+        Me.txt_batch1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_batch1.PlaceholderText = ""
+        Me.txt_batch1.SelectedText = ""
+        Me.txt_batch1.ShadowDecoration.Parent = Me.txt_batch1
+        Me.txt_batch1.Size = New System.Drawing.Size(265, 29)
+        Me.txt_batch1.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(13, 48)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(64, 20)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "Batch 1"
+        '
+        'txt_kk
+        '
+        Me.txt_kk.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_kk.DefaultText = ""
+        Me.txt_kk.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_kk.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_kk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_kk.DisabledState.Parent = Me.txt_kk
+        Me.txt_kk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_kk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_kk.FocusedState.Parent = Me.txt_kk
+        Me.txt_kk.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_kk.HoverState.Parent = Me.txt_kk
+        Me.txt_kk.Location = New System.Drawing.Point(95, 148)
+        Me.txt_kk.Name = "txt_kk"
+        Me.txt_kk.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_kk.PlaceholderText = ""
+        Me.txt_kk.SelectedText = ""
+        Me.txt_kk.ShadowDecoration.Parent = Me.txt_kk
+        Me.txt_kk.Size = New System.Drawing.Size(265, 29)
+        Me.txt_kk.TabIndex = 7
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(13, 153)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(81, 20)
+        Me.Label3.TabIndex = 13
+        Me.Label3.Text = "Kode Kain"
+        '
+        'txt_customer
+        '
+        Me.txt_customer.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_customer.DefaultText = ""
+        Me.txt_customer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_customer.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_customer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_customer.DisabledState.Parent = Me.txt_customer
+        Me.txt_customer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_customer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_customer.FocusedState.Parent = Me.txt_customer
+        Me.txt_customer.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_customer.HoverState.Parent = Me.txt_customer
+        Me.txt_customer.Location = New System.Drawing.Point(95, 113)
+        Me.txt_customer.Name = "txt_customer"
+        Me.txt_customer.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_customer.PlaceholderText = ""
+        Me.txt_customer.SelectedText = ""
+        Me.txt_customer.ShadowDecoration.Parent = Me.txt_customer
+        Me.txt_customer.Size = New System.Drawing.Size(265, 29)
+        Me.txt_customer.TabIndex = 6
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(13, 118)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(78, 20)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Customer"
+        '
+        'txt_name
+        '
+        Me.txt_name.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_name.DefaultText = ""
+        Me.txt_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_name.DisabledState.Parent = Me.txt_name
+        Me.txt_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_name.FocusedState.Parent = Me.txt_name
+        Me.txt_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_name.HoverState.Parent = Me.txt_name
+        Me.txt_name.Location = New System.Drawing.Point(95, 8)
+        Me.txt_name.Name = "txt_name"
+        Me.txt_name.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_name.PlaceholderText = ""
+        Me.txt_name.SelectedText = ""
+        Me.txt_name.ShadowDecoration.Parent = Me.txt_name
+        Me.txt_name.Size = New System.Drawing.Size(265, 29)
+        Me.txt_name.TabIndex = 3
+        '
+        'txt_batchid
+        '
+        Me.txt_batchid.AutoSize = True
+        Me.txt_batchid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_batchid.Location = New System.Drawing.Point(13, 13)
+        Me.txt_batchid.Name = "txt_batchid"
+        Me.txt_batchid.Size = New System.Drawing.Size(51, 20)
+        Me.txt_batchid.TabIndex = 9
+        Me.txt_batchid.Text = "Name"
+        '
+        'Guna2Separator1
+        '
+        Me.Guna2Separator1.Location = New System.Drawing.Point(28, 60)
+        Me.Guna2Separator1.Name = "Guna2Separator1"
+        Me.Guna2Separator1.Size = New System.Drawing.Size(382, 20)
+        Me.Guna2Separator1.TabIndex = 25
         '
         'Guna2Button1
         '
@@ -596,7 +596,7 @@ Partial Class FormBatchScheduler
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
         Me.Guna2Button1.Size = New System.Drawing.Size(62, 29)
-        Me.Guna2Button1.TabIndex = 26
+        Me.Guna2Button1.TabIndex = 17
         Me.Guna2Button1.Text = "Save"
         '
         'Guna2Button2
@@ -611,7 +611,7 @@ Partial Class FormBatchScheduler
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
         Me.Guna2Button2.Size = New System.Drawing.Size(62, 29)
-        Me.Guna2Button2.TabIndex = 27
+        Me.Guna2Button2.TabIndex = 16
         Me.Guna2Button2.Text = "Cancel"
         '
         'FormBatchScheduler
