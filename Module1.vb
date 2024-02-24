@@ -1,20 +1,25 @@
-﻿'imports singlestoreconnector
-Imports SingleStoreConnector
+﻿Imports System.Data.OleDb
+
 Module Module1
 
     Public str As String
-    Public conn As SingleStoreConnection
-    Public cmdi As SingleStoreCommand
-    Public dr As SingleStoreDataReader
+    Public conn As OleDbConnection
+    Public cmdi As OleDbCommand
+    Public dr As OleDbDataReader
 
     Sub koneksi()
-        str = "host=svc-fcc7225b-5d78-4f3a-82af-7462d4ce7089-dml.aws-jakarta-1.svc.singlestore.com;port=3306;userid=admin;password=Regexbro123;database=MarketingTools;"
-        conn = New SingleStoreConnection(str)
-        If conn.State = ConnectionState.Closed Then
+        str = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;"
+        conn = New OleDbConnection(str)
+        Try
             conn.Open()
-        Else
-            MsgBox(“Koneksi gagal, cek modul 1”)
-        End If
+            If conn.State = ConnectionState.Open Then
+
+            Else
+                MsgBox("Gagal terhubung ke database, cek modul 1")
+            End If
+        Catch ex As Exception
+            MsgBox("Koneksi gagal: " & ex.Message)
+        End Try
     End Sub
 
 End Module
