@@ -1,102 +1,66 @@
-﻿Imports SingleStoreConnector
+﻿Imports System.Data.OleDb
+
 Module crud
     Public Sub cudfunction(ByVal query As String)
-        con.Open()
-        Try
-            With cmd
-                .Connection = con
-                .CommandText = query
-            End With
-            result = cmd.ExecuteNonQuery()
-
-            If result = True Then
-                MsgBox(msgtrue)
-            Else
-                MsgBox(msgfalse, MsgBoxStyle.Critical)
-            End If
-
-
-        Catch ex As Exception
-            logs(ex.Message & " at cudfunction sub Procedure")
-            MsgBox(ex.Message)
-        End Try
-        con.Close()
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+            Try
+                con.Open()
+                Using cmd As New OleDbCommand(query, con)
+                    Dim result As Integer = cmd.ExecuteNonQuery()
+                    If result > 0 Then
+                        MsgBox("Operasi berhasil dilakukan.")
+                    Else
+                        MsgBox("Operasi gagal.", MsgBoxStyle.Critical)
+                    End If
+                End Using
+            Catch ex As Exception
+                MsgBox("Error: " & ex.Message)
+            End Try
+        End Using
     End Sub
+
     Public Sub retrieveSingleResult(ByVal query As String)
-
-        Try
-            con.Open()
-            cmd = New SingleStoreCommand
-            With cmd
-                .Connection = con
-                .CommandText = query
-            End With
-
-            da = New SingleStoreDataAdapter
-            da.SelectCommand = cmd
-
-            dt = New DataTable
-            da.Fill(dt)
-
-            'da.Fill(ds, "tblProductInfo")
-
-        Catch ex As Exception
-            logs(ex.Message & " at retrieveSingleResult sub Procedure")
-            MsgBox(ex.Message)
-        End Try
-        con.Close()
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+            Try
+                con.Open()
+                Using cmd As New OleDbCommand(query, con)
+                    Using reader As OleDbDataReader = cmd.ExecuteReader()
+                        ' Lakukan sesuatu dengan hasil pembacaan di sini
+                    End Using
+                End Using
+            Catch ex As Exception
+                MsgBox("Error: " & ex.Message)
+            End Try
+        End Using
     End Sub
 
     Public Sub retrieve(ByVal query As String, ByVal dtg As DataGridView)
-
-        Try
-
-            If con.State = ConnectionState.Closed Then
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+            Try
                 con.Open()
-            End If
-
-            cmd = New SingleStoreCommand
-            With cmd
-                .Connection = con
-                .CommandText = query
-            End With
-
-            da = New SingleStoreDataAdapter
-            da.SelectCommand = cmd
-
-            dt = New DataTable
-            da.Fill(dt)
-            dtg.DataSource = dt
-
-        Catch ex As Exception
-            logs(ex.Message & " at retrieve sub Procedure")
-            MsgBox(ex.Message)
-        Finally
-            con.Close()
-            da.Dispose()
-        End Try
+                Using cmd As New OleDbCommand(query, con)
+                    Using da As New OleDbDataAdapter(cmd)
+                        Dim dt As New DataTable()
+                        da.Fill(dt)
+                        dtg.DataSource = dt
+                    End Using
+                End Using
+            Catch ex As Exception
+                MsgBox("Error: " & ex.Message)
+            End Try
+        End Using
     End Sub
+
     Public Sub cudfunctionNOmsg(ByVal query As String)
-        con.Open()
-        Try
-            With cmd
-                .Connection = con
-                .CommandText = query
-            End With
-            result = cmd.ExecuteNonQuery()
-
-        Catch ex As Exception
-            logs(ex.Message & " at cudfunction sub Procedure")
-            MsgBox(ex.Message)
-        End Try
-        con.Close()
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+            Try
+                con.Open()
+                Using cmd As New OleDbCommand(query, con)
+                    cmd.ExecuteNonQuery()
+                End Using
+            Catch ex As Exception
+                MsgBox("Error: " & ex.Message)
+            End Try
+        End Using
     End Sub
-
-    'Public Sub gambarloading()
-
-    '    With Image
-    '        .background
-    '    End With
-
-    'End Sub
 End Module
