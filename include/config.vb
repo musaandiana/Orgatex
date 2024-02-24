@@ -1,7 +1,7 @@
 ﻿Imports System.Data.OleDb
 
 Module config
-    Public databasename As String = "\DBCelup.mdb"
+    Public databasename As String = "\X:/DBCelup.mdb"
     Private Function configdb() As OleDbConnection
         Dim connString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & databasename & ";Persist Security Info=False;"
         Return New OleDbConnection(connString)

@@ -49,7 +49,7 @@ Module publicfunction
     End Sub
 
     Public Sub CBOFILL(ByVal query As String, ByVal combo As ComboBox, ByVal member As String, ByVal id As String)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand(query, con)
@@ -71,7 +71,7 @@ Module publicfunction
     End Sub
 
     Public Sub txtAutoComplete(ByVal query As String, ByVal txt As Object)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand(query, con)
@@ -94,7 +94,7 @@ Module publicfunction
     End Sub
 
     Public Sub checkData(ByVal Checkquery As String, ByVal insertQuery As String, ByVal updateQuery As String)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand(Checkquery, con)
@@ -116,7 +116,7 @@ Module publicfunction
     End Sub
 
     Public Sub txtAutoNumber(ByVal autoid As Integer, ByVal txt As Object)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand("SELECT (STARTNUM & INCNUM) FROM tblAutoNumber WHERE ID=" & autoid, con)
@@ -136,7 +136,7 @@ Module publicfunction
     End Sub
 
     Public Sub updateAutoNumber(ByVal autoid As Integer)
-        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+        Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
             Try
                 con.Open()
                 Using cmd As New OleDbCommand("UPDATE tblAutoNumber SET INCNUM=INCNUM + 1 WHERE ID=" & autoid, con)
@@ -166,7 +166,7 @@ Module publicfunction
 #Region "EDIT TRANSACTIONS"
     Public Sub TRANSACTIONPROCESS(ByVal ACTIONTABLE As String, ByVal TBL As String, ByVal TRANSNUM As Integer, ByVal QTY As Double)
         Try
-            Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DBCelup.mdb;Persist Security Info=False;")
+            Using con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:/DBCelup.mdb;Persist Security Info=False;")
                 con.Open()
                 Select Case ACTIONTABLE
                     Case "ADD_QTY_PRODUCT"
