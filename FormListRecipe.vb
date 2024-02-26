@@ -10,4 +10,15 @@
             .Show()
         End With
     End Sub
+
+    Private Sub FormListRecipe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        koneksi()
+        query = "SELECT * FROM tbl_recipe order by ID asc"
+        retrieve(query, dglistrecipe)
+        dglistrecipe.Columns(0).Visible = False
+        dglistrecipe.Columns(1).HeaderText = "Recipe"
+        dglistrecipe.Columns(2).HeaderText = "Process"
+        dglistrecipe.Columns(3).HeaderText = "Kode Kain"
+        dglistrecipe.Columns(4).HeaderText = "Buyer"
+    End Sub
 End Class
