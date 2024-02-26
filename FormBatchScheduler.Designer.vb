@@ -72,6 +72,7 @@ Partial Class FormBatchScheduler
         '
         'txt_recipeID
         '
+        Me.txt_recipeID.BorderRadius = 6
         Me.txt_recipeID.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_recipeID.DefaultText = ""
         Me.txt_recipeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -83,17 +84,18 @@ Partial Class FormBatchScheduler
         Me.txt_recipeID.FocusedState.Parent = Me.txt_recipeID
         Me.txt_recipeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_recipeID.HoverState.Parent = Me.txt_recipeID
-        Me.txt_recipeID.Location = New System.Drawing.Point(115, 25)
+        Me.txt_recipeID.Location = New System.Drawing.Point(123, 25)
         Me.txt_recipeID.Name = "txt_recipeID"
         Me.txt_recipeID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_recipeID.PlaceholderText = ""
         Me.txt_recipeID.SelectedText = ""
         Me.txt_recipeID.ShadowDecoration.Parent = Me.txt_recipeID
-        Me.txt_recipeID.Size = New System.Drawing.Size(55, 29)
+        Me.txt_recipeID.Size = New System.Drawing.Size(47, 29)
         Me.txt_recipeID.TabIndex = 1
         '
         'txt_recipe
         '
+        Me.txt_recipe.BorderRadius = 6
         Me.txt_recipe.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_recipe.DefaultText = ""
         Me.txt_recipe.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -116,6 +118,7 @@ Partial Class FormBatchScheduler
         '
         'Guna2Button3
         '
+        Me.Guna2Button3.BorderRadius = 6
         Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
         Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
         Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -164,6 +167,7 @@ Partial Class FormBatchScheduler
         '
         'txt_comment
         '
+        Me.txt_comment.BorderRadius = 6
         Me.txt_comment.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_comment.DefaultText = ""
         Me.txt_comment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -197,6 +201,7 @@ Partial Class FormBatchScheduler
         '
         'txt_kg12
         '
+        Me.txt_kg12.BorderRadius = 6
         Me.txt_kg12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kg12.DefaultText = ""
         Me.txt_kg12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -229,6 +234,7 @@ Partial Class FormBatchScheduler
         '
         'txt_kg11
         '
+        Me.txt_kg11.BorderRadius = 6
         Me.txt_kg11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kg11.DefaultText = ""
         Me.txt_kg11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -261,6 +267,7 @@ Partial Class FormBatchScheduler
         '
         'txt_kg
         '
+        Me.txt_kg.BorderRadius = 6
         Me.txt_kg.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kg.DefaultText = ""
         Me.txt_kg.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -293,6 +300,7 @@ Partial Class FormBatchScheduler
         '
         'txt_y12
         '
+        Me.txt_y12.BorderRadius = 6
         Me.txt_y12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_y12.DefaultText = ""
         Me.txt_y12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -325,6 +333,7 @@ Partial Class FormBatchScheduler
         '
         'txt_y11
         '
+        Me.txt_y11.BorderRadius = 6
         Me.txt_y11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_y11.DefaultText = ""
         Me.txt_y11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -357,6 +366,7 @@ Partial Class FormBatchScheduler
         '
         'txt_y
         '
+        Me.txt_y.BorderRadius = 6
         Me.txt_y.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_y.DefaultText = ""
         Me.txt_y.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -389,6 +399,7 @@ Partial Class FormBatchScheduler
         '
         'txt_ockh
         '
+        Me.txt_ockh.BorderRadius = 6
         Me.txt_ockh.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_ockh.DefaultText = ""
         Me.txt_ockh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -421,6 +432,7 @@ Partial Class FormBatchScheduler
         '
         'txt_batch2
         '
+        Me.txt_batch2.BorderRadius = 6
         Me.txt_batch2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_batch2.DefaultText = ""
         Me.txt_batch2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -453,6 +465,7 @@ Partial Class FormBatchScheduler
         '
         'txt_batch1
         '
+        Me.txt_batch1.BorderRadius = 6
         Me.txt_batch1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_batch1.DefaultText = ""
         Me.txt_batch1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -485,6 +498,7 @@ Partial Class FormBatchScheduler
         '
         'txt_kk
         '
+        Me.txt_kk.BorderRadius = 6
         Me.txt_kk.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kk.DefaultText = ""
         Me.txt_kk.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -517,6 +531,7 @@ Partial Class FormBatchScheduler
         '
         'txt_customer
         '
+        Me.txt_customer.BorderRadius = 6
         Me.txt_customer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_customer.DefaultText = ""
         Me.txt_customer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -549,6 +564,7 @@ Partial Class FormBatchScheduler
         '
         'txt_name
         '
+        Me.txt_name.BorderRadius = 6
         Me.txt_name.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_name.DefaultText = ""
         Me.txt_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -588,6 +604,7 @@ Partial Class FormBatchScheduler
         '
         'btn_save
         '
+        Me.btn_save.BorderRadius = 6
         Me.btn_save.CheckedState.Parent = Me.btn_save
         Me.btn_save.CustomImages.Parent = Me.btn_save
         Me.btn_save.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -602,6 +619,7 @@ Partial Class FormBatchScheduler
         '
         'btn_cancel
         '
+        Me.btn_cancel.BorderRadius = 6
         Me.btn_cancel.CheckedState.Parent = Me.btn_cancel
         Me.btn_cancel.CustomImages.Parent = Me.btn_cancel
         Me.btn_cancel.FillColor = System.Drawing.Color.DarkGray
