@@ -98,7 +98,7 @@ Partial Class FormListRecipe
         'dglistrecipe
         '
         Me.dglistrecipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dglistrecipe.Location = New System.Drawing.Point(31, 96)
+        Me.dglistrecipe.Location = New System.Drawing.Point(31, 90)
         Me.dglistrecipe.Name = "dglistrecipe"
         Me.dglistrecipe.Size = New System.Drawing.Size(337, 341)
         Me.dglistrecipe.TabIndex = 4
