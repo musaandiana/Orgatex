@@ -1,13 +1,17 @@
-﻿Imports System.Data.OleDb
+﻿Imports System.ComponentModel
+Imports System.Data.OleDb
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports SingleStoreConnector
 
 Public Class FormAddRecipe
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        koneksi()
-        Saveprocess()
-        SaveprocessRecipe()
-
+        If txt_recipe.Text = "" And cmb_process.Text = "" And txt_kodekain.Text = "" And txt_buyer.Text = "" Then
+            MsgBox("Harap Isi Data")
+        Else
+            koneksi()
+            Saveprocess()
+            SaveprocessRecipe()
+        End If
     End Sub
 
 
@@ -208,4 +212,8 @@ Public Class FormAddRecipe
         End Try
     End Sub
 
+
+    Private Sub FormAddRecipe_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        FormMenuAwal.Show()
+    End Sub
 End Class

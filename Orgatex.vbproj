@@ -118,6 +118,12 @@
     <Compile Include="FormBatchScheduler.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormListRecipe.Designer.vb">
+      <DependentUpon>FormListRecipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListRecipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMenuAwal.Designer.vb">
       <DependentUpon>FormMenuAwal.vb</DependentUpon>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBatchScheduler.resx">
       <DependentUpon>FormBatchScheduler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListRecipe.resx">
+      <DependentUpon>FormListRecipe.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuAwal.resx">
       <DependentUpon>FormMenuAwal.vb</DependentUpon>
