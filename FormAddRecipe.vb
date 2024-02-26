@@ -62,9 +62,18 @@ Public Class FormAddRecipe
         query = "SELECT txt_kodekain,gsm,lebar FROM tbl_kodekain order by ID asc"
         retrieve(query, dgkodekain)
 
-        koneksi()
         query = "SELECT kodebuyer,txt_buyer FROM tbl_buyer order by ID asc"
         retrieve(query, dgbuyer)
+
+
+        query = "SELECT * FROM tbl_kumpulanrecipe order by ID asc"
+        retrieve(query, dgkumpulanrecipe)
+
+        dgkumpulanrecipe.Columns(0).Visible = False
+        'dgkumpulanrecipe.Columns(1).HeaderText = "Recipe"
+        'dgkumpulanrecipe.Columns(2).HeaderText = "Process"
+        'dgkumpulanrecipe.Columns(3).HeaderText = "Kode Kain"
+        'dgkumpulanrecipe.Columns(4).HeaderText = "Buyer"
     End Sub
 
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
@@ -132,17 +141,17 @@ Public Class FormAddRecipe
     End Sub
 
     Private Sub Guna2Button11_Click(sender As Object, e As EventArgs) Handles Guna2Button11.Click
-        panelinsert.Visible = False
+        'panelinsert.Visible = False
     End Sub
 
     Private Sub Guna2Button12_Click(sender As Object, e As EventArgs) Handles Guna2Button12.Click
-        Dim row As String() = New String() {txt_kodeobatinsert.Text, txt_namaobatinsert.Text, txt_valueinsert.Text, txt_jenisobatinsert.Text}
-        dginsert.Rows.Add(row)
-        txt_kodeobatinsert.Clear()
-        txt_namaobatinsert.Clear()
-        txt_valueinsert.Clear()
-        txt_jenisobatinsert.Clear()
-        panelinsert.Visible = False
+        'Dim row As String() = New String() {txt_kodeobatinsert.Text, txt_namaobatinsert.Text, txt_valueinsert.Text, txt_jenisobatinsert.Text}
+        'dginsert.Rows.Add(row)
+        'txt_kodeobatinsert.Clear()
+        'txt_namaobatinsert.Clear()
+        'txt_valueinsert.Clear()
+        'txt_jenisobatinsert.Clear()
+        'panelinsert.Visible = False
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
@@ -216,4 +225,5 @@ Public Class FormAddRecipe
     Private Sub FormAddRecipe_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         FormMenuAwal.Show()
     End Sub
+
 End Class
