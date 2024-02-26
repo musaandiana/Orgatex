@@ -25,12 +25,12 @@ Partial Class FormBatchList
         Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_recipe = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.dgbuyer = New System.Windows.Forms.DataGridView()
+        Me.dgbatch = New System.Windows.Forms.DataGridView()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        CType(Me.dgbuyer, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgbatch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2ComboBox1
@@ -87,14 +87,14 @@ Partial Class FormBatchList
         Me.txt_recipe.Size = New System.Drawing.Size(227, 36)
         Me.txt_recipe.TabIndex = 21
         '
-        'dgbuyer
+        'dgbatch
         '
-        Me.dgbuyer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbuyer.Location = New System.Drawing.Point(26, 99)
-        Me.dgbuyer.Name = "dgbuyer"
-        Me.dgbuyer.ReadOnly = True
-        Me.dgbuyer.Size = New System.Drawing.Size(529, 579)
-        Me.dgbuyer.TabIndex = 25
+        Me.dgbatch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbatch.Location = New System.Drawing.Point(26, 99)
+        Me.dgbatch.Name = "dgbatch"
+        Me.dgbatch.ReadOnly = True
+        Me.dgbatch.Size = New System.Drawing.Size(529, 579)
+        Me.dgbatch.TabIndex = 25
         '
         'Guna2Button1
         '
@@ -167,14 +167,14 @@ Partial Class FormBatchList
         Me.Controls.Add(Me.Guna2Button3)
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.Guna2Button1)
-        Me.Controls.Add(Me.dgbuyer)
+        Me.Controls.Add(Me.dgbatch)
         Me.Controls.Add(Me.Guna2ComboBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_recipe)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "FormBatchList"
         Me.Text = "FormBatchList"
-        CType(Me.dgbuyer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbatch, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -183,7 +183,7 @@ Partial Class FormBatchList
     Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_recipe As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents dgbuyer As DataGridView
+    Friend WithEvents dgbatch As DataGridView
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
