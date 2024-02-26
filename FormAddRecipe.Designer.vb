@@ -80,6 +80,7 @@ Partial Class FormAddRecipe
         '
         'txt_recipe
         '
+        Me.txt_recipe.BorderRadius = 6
         Me.txt_recipe.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_recipe.DefaultText = ""
         Me.txt_recipe.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -102,6 +103,7 @@ Partial Class FormAddRecipe
         '
         'txt_buyer
         '
+        Me.txt_buyer.BorderRadius = 6
         Me.txt_buyer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_buyer.DefaultText = ""
         Me.txt_buyer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -154,6 +156,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button1
         '
+        Me.Guna2Button1.BorderRadius = 6
         Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
         Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -169,6 +172,7 @@ Partial Class FormAddRecipe
         'cmb_process
         '
         Me.cmb_process.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_process.BorderRadius = 6
         Me.cmb_process.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmb_process.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_process.FocusedColor = System.Drawing.Color.Empty
@@ -188,6 +192,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button2
         '
+        Me.Guna2Button2.BorderRadius = 6
         Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
         Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
         Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -202,6 +207,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button3
         '
+        Me.Guna2Button3.BorderRadius = 6
         Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
         Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
         Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -216,6 +222,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button4
         '
+        Me.Guna2Button4.BorderRadius = 6
         Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
         Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
         Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -230,6 +237,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button5
         '
+        Me.Guna2Button5.BorderRadius = 6
         Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
         Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
         Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -254,6 +262,7 @@ Partial Class FormAddRecipe
         '
         'txt_kodekain
         '
+        Me.txt_kodekain.BorderRadius = 6
         Me.txt_kodekain.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kodekain.DefaultText = ""
         Me.txt_kodekain.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -276,6 +285,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button6
         '
+        Me.Guna2Button6.BorderRadius = 6
         Me.Guna2Button6.CheckedState.Parent = Me.Guna2Button6
         Me.Guna2Button6.CustomImages.Parent = Me.Guna2Button6
         Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -291,6 +301,7 @@ Partial Class FormAddRecipe
         'panelkodekain
         '
         Me.panelkodekain.BackColor = System.Drawing.Color.LightGray
+        Me.panelkodekain.BorderRadius = 6
         Me.panelkodekain.Controls.Add(Me.Label6)
         Me.panelkodekain.Controls.Add(Me.txt_lebarinput)
         Me.panelkodekain.Controls.Add(Me.Guna2Button8)
@@ -300,7 +311,7 @@ Partial Class FormAddRecipe
         Me.panelkodekain.Controls.Add(Me.txt_gsminput)
         Me.panelkodekain.Controls.Add(Me.Guna2Button7)
         Me.panelkodekain.Controls.Add(Me.txt_kodekaininput)
-        Me.panelkodekain.Location = New System.Drawing.Point(216, 120)
+        Me.panelkodekain.Location = New System.Drawing.Point(260, 62)
         Me.panelkodekain.Name = "panelkodekain"
         Me.panelkodekain.ShadowDecoration.Parent = Me.panelkodekain
         Me.panelkodekain.Size = New System.Drawing.Size(362, 364)
@@ -310,7 +321,7 @@ Partial Class FormAddRecipe
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(14, 80)
+        Me.Label6.Location = New System.Drawing.Point(14, 83)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(34, 13)
         Me.Label6.TabIndex = 37
@@ -318,6 +329,7 @@ Partial Class FormAddRecipe
         '
         'txt_lebarinput
         '
+        Me.txt_lebarinput.BorderRadius = 6
         Me.txt_lebarinput.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_lebarinput.DefaultText = ""
         Me.txt_lebarinput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -340,22 +352,23 @@ Partial Class FormAddRecipe
         '
         'Guna2Button8
         '
+        Me.Guna2Button8.BorderRadius = 6
         Me.Guna2Button8.CheckedState.Parent = Me.Guna2Button8
         Me.Guna2Button8.CustomImages.Parent = Me.Guna2Button8
         Me.Guna2Button8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button8.ForeColor = System.Drawing.Color.White
         Me.Guna2Button8.HoverState.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Location = New System.Drawing.Point(301, 307)
+        Me.Guna2Button8.Location = New System.Drawing.Point(252, 307)
         Me.Guna2Button8.Name = "Guna2Button8"
         Me.Guna2Button8.ShadowDecoration.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Size = New System.Drawing.Size(43, 36)
+        Me.Guna2Button8.Size = New System.Drawing.Size(92, 36)
         Me.Guna2Button8.TabIndex = 35
         Me.Guna2Button8.Text = "Close"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(218, 14)
+        Me.Label5.Location = New System.Drawing.Point(218, 18)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(31, 13)
         Me.Label5.TabIndex = 34
@@ -364,7 +377,7 @@ Partial Class FormAddRecipe
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 14)
+        Me.Label4.Location = New System.Drawing.Point(14, 18)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 33
@@ -380,6 +393,7 @@ Partial Class FormAddRecipe
         '
         'txt_gsminput
         '
+        Me.txt_gsminput.BorderRadius = 6
         Me.txt_gsminput.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_gsminput.DefaultText = ""
         Me.txt_gsminput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -402,6 +416,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button7
         '
+        Me.Guna2Button7.BorderRadius = 6
         Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
         Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
         Me.Guna2Button7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -416,6 +431,7 @@ Partial Class FormAddRecipe
         '
         'txt_kodekaininput
         '
+        Me.txt_kodekaininput.BorderRadius = 6
         Me.txt_kodekaininput.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kodekaininput.DefaultText = ""
         Me.txt_kodekaininput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -446,7 +462,7 @@ Partial Class FormAddRecipe
         Me.panelbuyer.Controls.Add(Me.dgbuyer)
         Me.panelbuyer.Controls.Add(Me.txt_buyerinput)
         Me.panelbuyer.Controls.Add(Me.txt_kodebuyerinput)
-        Me.panelbuyer.Location = New System.Drawing.Point(198, 120)
+        Me.panelbuyer.Location = New System.Drawing.Point(258, 104)
         Me.panelbuyer.Name = "panelbuyer"
         Me.panelbuyer.ShadowDecoration.Parent = Me.panelbuyer
         Me.panelbuyer.Size = New System.Drawing.Size(362, 364)
@@ -455,6 +471,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button10
         '
+        Me.Guna2Button10.BorderRadius = 6
         Me.Guna2Button10.CheckedState.Parent = Me.Guna2Button10
         Me.Guna2Button10.CustomImages.Parent = Me.Guna2Button10
         Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -469,6 +486,7 @@ Partial Class FormAddRecipe
         '
         'Guna2Button9
         '
+        Me.Guna2Button9.BorderRadius = 6
         Me.Guna2Button9.CheckedState.Parent = Me.Guna2Button9
         Me.Guna2Button9.CustomImages.Parent = Me.Guna2Button9
         Me.Guna2Button9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -509,6 +527,7 @@ Partial Class FormAddRecipe
         '
         'txt_buyerinput
         '
+        Me.txt_buyerinput.BorderRadius = 6
         Me.txt_buyerinput.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_buyerinput.DefaultText = ""
         Me.txt_buyerinput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -531,6 +550,7 @@ Partial Class FormAddRecipe
         '
         'txt_kodebuyerinput
         '
+        Me.txt_kodebuyerinput.BorderRadius = 6
         Me.txt_kodebuyerinput.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kodebuyerinput.DefaultText = ""
         Me.txt_kodebuyerinput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -564,7 +584,7 @@ Partial Class FormAddRecipe
         Me.panelinsert.Controls.Add(Me.txt_namaobatinsert)
         Me.panelinsert.Controls.Add(Me.Guna2Button12)
         Me.panelinsert.Controls.Add(Me.txt_kodeobatinsert)
-        Me.panelinsert.Location = New System.Drawing.Point(83, 106)
+        Me.panelinsert.Location = New System.Drawing.Point(16, 151)
         Me.panelinsert.Name = "panelinsert"
         Me.panelinsert.ShadowDecoration.Parent = Me.panelinsert
         Me.panelinsert.Size = New System.Drawing.Size(362, 212)
@@ -582,6 +602,7 @@ Partial Class FormAddRecipe
         '
         'txt_jenisobatinsert
         '
+        Me.txt_jenisobatinsert.BorderRadius = 6
         Me.txt_jenisobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_jenisobatinsert.DefaultText = ""
         Me.txt_jenisobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -613,6 +634,7 @@ Partial Class FormAddRecipe
         '
         'txt_valueinsert
         '
+        Me.txt_valueinsert.BorderRadius = 6
         Me.txt_valueinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_valueinsert.DefaultText = ""
         Me.txt_valueinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -635,15 +657,16 @@ Partial Class FormAddRecipe
         '
         'Guna2Button11
         '
+        Me.Guna2Button11.BorderRadius = 6
         Me.Guna2Button11.CheckedState.Parent = Me.Guna2Button11
         Me.Guna2Button11.CustomImages.Parent = Me.Guna2Button11
         Me.Guna2Button11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button11.ForeColor = System.Drawing.Color.White
         Me.Guna2Button11.HoverState.Parent = Me.Guna2Button11
-        Me.Guna2Button11.Location = New System.Drawing.Point(172, 156)
+        Me.Guna2Button11.Location = New System.Drawing.Point(139, 156)
         Me.Guna2Button11.Name = "Guna2Button11"
         Me.Guna2Button11.ShadowDecoration.Parent = Me.Guna2Button11
-        Me.Guna2Button11.Size = New System.Drawing.Size(43, 36)
+        Me.Guna2Button11.Size = New System.Drawing.Size(74, 36)
         Me.Guna2Button11.TabIndex = 35
         Me.Guna2Button11.Text = "Close"
         '
@@ -667,6 +690,7 @@ Partial Class FormAddRecipe
         '
         'txt_namaobatinsert
         '
+        Me.txt_namaobatinsert.BorderRadius = 6
         Me.txt_namaobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_namaobatinsert.DefaultText = ""
         Me.txt_namaobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -689,12 +713,13 @@ Partial Class FormAddRecipe
         '
         'Guna2Button12
         '
+        Me.Guna2Button12.BorderRadius = 6
         Me.Guna2Button12.CheckedState.Parent = Me.Guna2Button12
         Me.Guna2Button12.CustomImages.Parent = Me.Guna2Button12
         Me.Guna2Button12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button12.ForeColor = System.Drawing.Color.White
         Me.Guna2Button12.HoverState.Parent = Me.Guna2Button12
-        Me.Guna2Button12.Location = New System.Drawing.Point(226, 156)
+        Me.Guna2Button12.Location = New System.Drawing.Point(220, 156)
         Me.Guna2Button12.Name = "Guna2Button12"
         Me.Guna2Button12.ShadowDecoration.Parent = Me.Guna2Button12
         Me.Guna2Button12.Size = New System.Drawing.Size(123, 36)
@@ -703,6 +728,7 @@ Partial Class FormAddRecipe
         '
         'txt_kodeobatinsert
         '
+        Me.txt_kodeobatinsert.BorderRadius = 6
         Me.txt_kodeobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kodeobatinsert.DefaultText = ""
         Me.txt_kodeobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -758,13 +784,17 @@ Partial Class FormAddRecipe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(638, 486)
+        Me.Controls.Add(Me.panelinsert)
+        Me.Controls.Add(Me.panelbuyer)
         Me.Controls.Add(Me.dginsert)
         Me.Controls.Add(Me.Guna2Button6)
         Me.Controls.Add(Me.Guna2Button4)
         Me.Controls.Add(Me.Guna2Button5)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txt_kodekain)
+        Me.Controls.Add(Me.panelkodekain)
         Me.Controls.Add(Me.Guna2Button3)
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.cmb_process)
@@ -774,9 +804,8 @@ Partial Class FormAddRecipe
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_buyer)
         Me.Controls.Add(Me.txt_recipe)
-        Me.Controls.Add(Me.panelkodekain)
-        Me.Controls.Add(Me.panelbuyer)
-        Me.Controls.Add(Me.panelinsert)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "FormAddRecipe"
         Me.Text = "FormAddRecipe"
         Me.panelkodekain.ResumeLayout(False)
