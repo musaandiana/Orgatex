@@ -22,20 +22,12 @@ Partial Class FormAddRecipe
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txt_recipe = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_buyer = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.dginsert = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Kodeobat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaObat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Value = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Jenis = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmb_process = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
@@ -73,12 +65,17 @@ Partial Class FormAddRecipe
         Me.txt_namaobatinsert = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button12 = New Guna.UI2.WinForms.Guna2Button()
         Me.txt_kodeobatinsert = New Guna.UI2.WinForms.Guna2TextBox()
-        CType(Me.dginsert, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dginsert = New System.Windows.Forms.DataGridView()
+        Me.kodeobat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.namaobat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.value = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jenisobat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.panelkodekain.SuspendLayout()
         CType(Me.dgkodekain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelbuyer.SuspendLayout()
         CType(Me.dgbuyer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelinsert.SuspendLayout()
+        CType(Me.dginsert, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txt_recipe
@@ -168,84 +165,6 @@ Partial Class FormAddRecipe
         Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
         Me.Guna2Button1.TabIndex = 18
         Me.Guna2Button1.Text = "Oke"
-        '
-        'dginsert
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.dginsert.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dginsert.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dginsert.BackgroundColor = System.Drawing.Color.White
-        Me.dginsert.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dginsert.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dginsert.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dginsert.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dginsert.ColumnHeadersHeight = 40
-        Me.dginsert.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Kodeobat, Me.NamaObat, Me.Value, Me.Jenis})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dginsert.DefaultCellStyle = DataGridViewCellStyle3
-        Me.dginsert.EnableHeadersVisualStyles = False
-        Me.dginsert.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dginsert.Location = New System.Drawing.Point(16, 153)
-        Me.dginsert.Name = "dginsert"
-        Me.dginsert.RowHeadersVisible = False
-        Me.dginsert.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dginsert.Size = New System.Drawing.Size(606, 269)
-        Me.dginsert.TabIndex = 19
-        Me.dginsert.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.dginsert.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.dginsert.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.dginsert.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.dginsert.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.dginsert.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.dginsert.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.dginsert.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dginsert.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dginsert.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dginsert.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.dginsert.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.dginsert.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.dginsert.ThemeStyle.HeaderStyle.Height = 40
-        Me.dginsert.ThemeStyle.ReadOnly = False
-        Me.dginsert.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.dginsert.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dginsert.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.dginsert.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.dginsert.ThemeStyle.RowsStyle.Height = 22
-        Me.dginsert.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dginsert.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'Kodeobat
-        '
-        Me.Kodeobat.HeaderText = "Kode Obat"
-        Me.Kodeobat.Name = "Kodeobat"
-        '
-        'NamaObat
-        '
-        Me.NamaObat.HeaderText = "Nama Obat"
-        Me.NamaObat.Name = "NamaObat"
-        '
-        'Value
-        '
-        Me.Value.HeaderText = "Value"
-        Me.Value.Name = "Value"
-        '
-        'Jenis
-        '
-        Me.Jenis.HeaderText = "Jenis"
-        Me.Jenis.Name = "Jenis"
         '
         'cmb_process
         '
@@ -804,11 +723,43 @@ Partial Class FormAddRecipe
         Me.txt_kodeobatinsert.Size = New System.Drawing.Size(149, 36)
         Me.txt_kodeobatinsert.TabIndex = 29
         '
+        'dginsert
+        '
+        Me.dginsert.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dginsert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dginsert.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.kodeobat, Me.namaobat, Me.value, Me.jenisobat})
+        Me.dginsert.Location = New System.Drawing.Point(16, 158)
+        Me.dginsert.Name = "dginsert"
+        Me.dginsert.RowHeadersWidth = 30
+        Me.dginsert.Size = New System.Drawing.Size(613, 263)
+        Me.dginsert.TabIndex = 39
+        '
+        'kodeobat
+        '
+        Me.kodeobat.HeaderText = "Kode Obat"
+        Me.kodeobat.Name = "kodeobat"
+        '
+        'namaobat
+        '
+        Me.namaobat.HeaderText = "Nama Obat"
+        Me.namaobat.Name = "namaobat"
+        '
+        'value
+        '
+        Me.value.HeaderText = "Value"
+        Me.value.Name = "value"
+        '
+        'jenisobat
+        '
+        Me.jenisobat.HeaderText = "Jenis Obat"
+        Me.jenisobat.Name = "jenisobat"
+        '
         'FormAddRecipe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(638, 486)
+        Me.Controls.Add(Me.dginsert)
         Me.Controls.Add(Me.Guna2Button6)
         Me.Controls.Add(Me.Guna2Button4)
         Me.Controls.Add(Me.Guna2Button5)
@@ -817,7 +768,6 @@ Partial Class FormAddRecipe
         Me.Controls.Add(Me.Guna2Button3)
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.cmb_process)
-        Me.Controls.Add(Me.dginsert)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -829,7 +779,6 @@ Partial Class FormAddRecipe
         Me.Controls.Add(Me.panelinsert)
         Me.Name = "FormAddRecipe"
         Me.Text = "FormAddRecipe"
-        CType(Me.dginsert, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelkodekain.ResumeLayout(False)
         Me.panelkodekain.PerformLayout()
         CType(Me.dgkodekain, System.ComponentModel.ISupportInitialize).EndInit()
@@ -838,6 +787,7 @@ Partial Class FormAddRecipe
         CType(Me.dgbuyer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelinsert.ResumeLayout(False)
         Me.panelinsert.PerformLayout()
+        CType(Me.dginsert, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -849,7 +799,6 @@ Partial Class FormAddRecipe
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents dginsert As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents cmb_process As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
@@ -866,10 +815,6 @@ Partial Class FormAddRecipe
     Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Kodeobat As DataGridViewTextBoxColumn
-    Friend WithEvents NamaObat As DataGridViewTextBoxColumn
-    Friend WithEvents Value As DataGridViewTextBoxColumn
-    Friend WithEvents Jenis As DataGridViewTextBoxColumn
     Friend WithEvents Label6 As Label
     Friend WithEvents txt_lebarinput As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents panelbuyer As Guna.UI2.WinForms.Guna2Panel
@@ -891,4 +836,9 @@ Partial Class FormAddRecipe
     Friend WithEvents txt_namaobatinsert As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button12 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txt_kodeobatinsert As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents dginsert As DataGridView
+    Friend WithEvents kodeobat As DataGridViewTextBoxColumn
+    Friend WithEvents namaobat As DataGridViewTextBoxColumn
+    Friend WithEvents value As DataGridViewTextBoxColumn
+    Friend WithEvents jenisobat As DataGridViewTextBoxColumn
 End Class
