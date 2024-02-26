@@ -90,6 +90,7 @@ Partial Class FormBatchList
         Me.dgbuyer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgbuyer.Location = New System.Drawing.Point(26, 69)
         Me.dgbuyer.Name = "dgbuyer"
+        Me.dgbuyer.ReadOnly = True
         Me.dgbuyer.Size = New System.Drawing.Size(529, 609)
         Me.dgbuyer.TabIndex = 25
         '

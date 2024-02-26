@@ -6,6 +6,7 @@ Public Class FormBatchList
     End Sub
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+        FormBatchScheduler.txt_id.Text = ""
         FormBatchScheduler.Show()
     End Sub
 

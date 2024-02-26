@@ -54,8 +54,9 @@ Partial Class FormBatchScheduler
         Me.txt_name = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_batchid = New System.Windows.Forms.Label()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_save = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_cancel = New Guna.UI2.WinForms.Guna2Button()
+        Me.txt_id = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -585,42 +586,66 @@ Partial Class FormBatchScheduler
         Me.Guna2Separator1.Size = New System.Drawing.Size(382, 20)
         Me.Guna2Separator1.TabIndex = 25
         '
-        'Guna2Button1
+        'btn_save
         '
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(348, 705)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(62, 29)
-        Me.Guna2Button1.TabIndex = 17
-        Me.Guna2Button1.Text = "Save"
+        Me.btn_save.CheckedState.Parent = Me.btn_save
+        Me.btn_save.CustomImages.Parent = Me.btn_save
+        Me.btn_save.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_save.ForeColor = System.Drawing.Color.White
+        Me.btn_save.HoverState.Parent = Me.btn_save
+        Me.btn_save.Location = New System.Drawing.Point(348, 705)
+        Me.btn_save.Name = "btn_save"
+        Me.btn_save.ShadowDecoration.Parent = Me.btn_save
+        Me.btn_save.Size = New System.Drawing.Size(62, 29)
+        Me.btn_save.TabIndex = 17
+        Me.btn_save.Text = "Save"
         '
-        'Guna2Button2
+        'btn_cancel
         '
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(280, 705)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(62, 29)
-        Me.Guna2Button2.TabIndex = 16
-        Me.Guna2Button2.Text = "Cancel"
+        Me.btn_cancel.CheckedState.Parent = Me.btn_cancel
+        Me.btn_cancel.CustomImages.Parent = Me.btn_cancel
+        Me.btn_cancel.FillColor = System.Drawing.Color.DarkGray
+        Me.btn_cancel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.btn_cancel.HoverState.Parent = Me.btn_cancel
+        Me.btn_cancel.Location = New System.Drawing.Point(280, 705)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.ShadowDecoration.Parent = Me.btn_cancel
+        Me.btn_cancel.Size = New System.Drawing.Size(62, 29)
+        Me.btn_cancel.TabIndex = 16
+        Me.btn_cancel.Text = "Cancel"
+        '
+        'txt_id
+        '
+        Me.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_id.DefaultText = ""
+        Me.txt_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_id.DisabledState.Parent = Me.txt_id
+        Me.txt_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_id.FocusedState.Parent = Me.txt_id
+        Me.txt_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_id.HoverState.Parent = Me.txt_id
+        Me.txt_id.Location = New System.Drawing.Point(418, 2)
+        Me.txt_id.Name = "txt_id"
+        Me.txt_id.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_id.PlaceholderText = ""
+        Me.txt_id.SelectedText = ""
+        Me.txt_id.ShadowDecoration.Parent = Me.txt_id
+        Me.txt_id.Size = New System.Drawing.Size(33, 29)
+        Me.txt_id.TabIndex = 26
+        Me.txt_id.Visible = False
         '
         'FormBatchScheduler
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 764)
-        Me.Controls.Add(Me.Guna2Button2)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.txt_id)
+        Me.Controls.Add(Me.btn_cancel)
+        Me.Controls.Add(Me.btn_save)
         Me.Controls.Add(Me.Guna2Separator1)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2Button3)
@@ -668,6 +693,7 @@ Partial Class FormBatchScheduler
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents txt_comment As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label13 As Label
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_save As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_cancel As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txt_id As Guna.UI2.WinForms.Guna2TextBox
 End Class
