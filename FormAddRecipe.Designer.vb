@@ -584,7 +584,7 @@ Partial Class FormAddRecipe
         Me.panelinsert.Controls.Add(Me.txt_namaobatinsert)
         Me.panelinsert.Controls.Add(Me.Guna2Button12)
         Me.panelinsert.Controls.Add(Me.txt_kodeobatinsert)
-        Me.panelinsert.Location = New System.Drawing.Point(83, 106)
+        Me.panelinsert.Location = New System.Drawing.Point(16, 151)
         Me.panelinsert.Name = "panelinsert"
         Me.panelinsert.ShadowDecoration.Parent = Me.panelinsert
         Me.panelinsert.Size = New System.Drawing.Size(362, 212)
@@ -602,6 +602,7 @@ Partial Class FormAddRecipe
         '
         'txt_jenisobatinsert
         '
+        Me.txt_jenisobatinsert.BorderRadius = 6
         Me.txt_jenisobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_jenisobatinsert.DefaultText = ""
         Me.txt_jenisobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -633,6 +634,7 @@ Partial Class FormAddRecipe
         '
         'txt_valueinsert
         '
+        Me.txt_valueinsert.BorderRadius = 6
         Me.txt_valueinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_valueinsert.DefaultText = ""
         Me.txt_valueinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -655,15 +657,16 @@ Partial Class FormAddRecipe
         '
         'Guna2Button11
         '
+        Me.Guna2Button11.BorderRadius = 6
         Me.Guna2Button11.CheckedState.Parent = Me.Guna2Button11
         Me.Guna2Button11.CustomImages.Parent = Me.Guna2Button11
         Me.Guna2Button11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button11.ForeColor = System.Drawing.Color.White
         Me.Guna2Button11.HoverState.Parent = Me.Guna2Button11
-        Me.Guna2Button11.Location = New System.Drawing.Point(172, 156)
+        Me.Guna2Button11.Location = New System.Drawing.Point(139, 156)
         Me.Guna2Button11.Name = "Guna2Button11"
         Me.Guna2Button11.ShadowDecoration.Parent = Me.Guna2Button11
-        Me.Guna2Button11.Size = New System.Drawing.Size(43, 36)
+        Me.Guna2Button11.Size = New System.Drawing.Size(74, 36)
         Me.Guna2Button11.TabIndex = 35
         Me.Guna2Button11.Text = "Close"
         '
@@ -687,6 +690,7 @@ Partial Class FormAddRecipe
         '
         'txt_namaobatinsert
         '
+        Me.txt_namaobatinsert.BorderRadius = 6
         Me.txt_namaobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_namaobatinsert.DefaultText = ""
         Me.txt_namaobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -709,12 +713,13 @@ Partial Class FormAddRecipe
         '
         'Guna2Button12
         '
+        Me.Guna2Button12.BorderRadius = 6
         Me.Guna2Button12.CheckedState.Parent = Me.Guna2Button12
         Me.Guna2Button12.CustomImages.Parent = Me.Guna2Button12
         Me.Guna2Button12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button12.ForeColor = System.Drawing.Color.White
         Me.Guna2Button12.HoverState.Parent = Me.Guna2Button12
-        Me.Guna2Button12.Location = New System.Drawing.Point(226, 156)
+        Me.Guna2Button12.Location = New System.Drawing.Point(220, 156)
         Me.Guna2Button12.Name = "Guna2Button12"
         Me.Guna2Button12.ShadowDecoration.Parent = Me.Guna2Button12
         Me.Guna2Button12.Size = New System.Drawing.Size(123, 36)
@@ -723,6 +728,7 @@ Partial Class FormAddRecipe
         '
         'txt_kodeobatinsert
         '
+        Me.txt_kodeobatinsert.BorderRadius = 6
         Me.txt_kodeobatinsert.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_kodeobatinsert.DefaultText = ""
         Me.txt_kodeobatinsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -780,6 +786,7 @@ Partial Class FormAddRecipe
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(638, 486)
+        Me.Controls.Add(Me.panelinsert)
         Me.Controls.Add(Me.panelbuyer)
         Me.Controls.Add(Me.dginsert)
         Me.Controls.Add(Me.Guna2Button6)
@@ -797,7 +804,6 @@ Partial Class FormAddRecipe
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_buyer)
         Me.Controls.Add(Me.txt_recipe)
-        Me.Controls.Add(Me.panelinsert)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "FormAddRecipe"
