@@ -1,4 +1,5 @@
-﻿Imports System.Data.OleDb
+﻿Imports System.ComponentModel
+Imports System.Data.OleDb
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports SingleStoreConnector
 
@@ -208,4 +209,8 @@ Public Class FormAddRecipe
         End Try
     End Sub
 
+
+    Private Sub FormAddRecipe_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        FormMenuAwal.Show()
+    End Sub
 End Class
